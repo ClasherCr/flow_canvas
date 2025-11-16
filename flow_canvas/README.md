@@ -352,4 +352,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For bugs, questions, and discussions please use the [GitHub Issues](https://github.com/yourusername/flow_canvas/issues).
+For bugs, questions, and discussions please use the [GitHub Issues](https://github.com/ClasherCr/flow_canvas/issues).
