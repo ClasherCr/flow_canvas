@@ -450,7 +450,7 @@ class NodeConfigExample extends ConsumerStatefulWidget {
 }
 
 class _NodeConfigExampleState extends ConsumerState<NodeConfigExample> {
-  bool _showPalette = true;
+  final bool _showPalette = true;
 
   @override
   Widget build(BuildContext context) {
@@ -606,10 +606,10 @@ class _NodeConfigExampleState extends ConsumerState<NodeConfigExample> {
                             child: Container(
                               padding: const EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                color: Colors.blue.withOpacity(0.05),
+                                color: Colors.blue.withAlpha(128),
                                 borderRadius: BorderRadius.circular(8),
                                 border: Border.all(
-                                  color: Colors.blue.withOpacity(0.2),
+                                  color: Colors.blue.withAlpha(51),
                                 ),
                               ),
                               child: Column(

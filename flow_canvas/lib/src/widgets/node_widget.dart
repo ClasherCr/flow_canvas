@@ -1,8 +1,6 @@
 import 'package:flow_canvas/flow_canvas.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/node.dart';
-import '../providers/flow_provider.dart';
 
 typedef NodeBuilder =
     Widget Function(
@@ -246,8 +244,8 @@ class _FlowNodeWidgetState extends ConsumerState<FlowNodeWidget> {
         child: Opacity(
           opacity: showPort ? 1.0 : 0.3,
           child: DragTarget<String>(
-            onAccept: (data) {
-              final parts = data.split(':');
+            onAcceptWithDetails: (details) {
+              final parts = details.data.split(':');
               if (parts.length == 3) {
                 final fromNodeId = parts[0];
                 final fromPortStr = parts[1];

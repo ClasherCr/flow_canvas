@@ -1,4 +1,4 @@
-library flow_canvas;
+library;
 
 export 'src/flow_canvas.dart';
 export 'src/models/node.dart';
